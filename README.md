@@ -7,6 +7,7 @@ Drupal 7.x
 
 Facet API ([https://www.drupal.org/project/facetapi](https://www.drupal.org/project/facetapi))
 
-## Spacial thanks
+## Special thanks
 
-This patch very help me: [https://www.drupal.org/files/1367612.9-facetapi-links-render-array.patch](https://www.drupal.org/files/1367612.9-facetapi-links-render-array.patch)
+* This patch very help me: [https://www.drupal.org/files/1367612.9-facetapi-links-render-array.patch](https://www.drupal.org/files/1367612.9-facetapi-links-render-array.patch).
+* This module sponsored by [IACM](http://iacm.ru).
