@@ -1,0 +1,68 @@
+<?php
+
+/**
+ * @file
+ * A Facet API widget that displays facet items as inline links.
+ */
+
+/**
+ * Implements hook_facetapi_widgets().
+ */
+function facetapi_inline_links_facetapi_widgets() {
+  return array(
+    'facetapi_inline_links' => array(
+      'handler' => array(
+        'label' => t('Inline links'),
+        'class' => 'FacetapiWidgetInlineLinks',
+        'query types' => array('term'),
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_facetapi_theme().
+ */
+function facetapi_inline_links_theme() {
+  return array(
+	'facetapi_inline_links_item_list' => array(
+      'variables' => array('items' => array(), 'title' => NULL, 'type' => NULL, 'attributes' => array()),
+      'file' => 'facetapi_inline_links.theme.inc',
+    ),
+    'facetapi_title' => array(
+      'arguments' => array('title' => NULL, 'facet' => array()), 
+      'file' => 'facetapi_inline_links.theme.inc',
+	  'function' => 'theme_facetapi_inline_links_title',
+    ), 
+    'facetapi_facet_missing' => array(
+      'arguments' => array('field_name' => NULL), 
+      'file' => 'facetapi_inline_links.theme.inc',
+	  'function' => 'theme_facetapi_inline_links_facet_missing',
+    ), 
+    'facetapi_count' => array(
+      'arguments' => array('count' => NULL), 
+      'file' => 'facetapi_inline_links.theme.inc',
+	  'function' => 'theme_facetapi_inline_links_count',
+    ), 
+    'facetapi_link_inactive' => array(
+      'arguments' => array('text' => NULL, 'path' => NULL, 'options' => array(), 'count' => 0), 
+      'file' => 'facetapi_inline_links.theme.inc',
+	  'function' => 'theme_facetapi_inline_links_link_inactive',
+    ), 
+    'facetapi_link_active' => array(
+      'arguments' => array('text' => NULL, 'path' => NULL, 'options' => array()), 
+      'file' => 'facetapi_inline_links.theme.inc',
+	  'function' => 'theme_facetapi_inline_links_link_active',
+    ), 
+    'facetapi_deactivate_widget' => array(
+      'arguments' => array('text' => NULL), 
+      'file' => 'facetapi_inline_links.theme.inc',
+	  'function' => 'theme_facetapi_inline_links_deactivate_widget',
+    ), 
+    'facetapi_accessible_markup' => array(
+      'arguments' => array('text' => NULL, 'active' => NULL), 
+      'file' => 'facetapi_inline_links.theme.inc',
+	  'function' => 'theme_facetapi_inline_links_accessible_markup',
+    ),
+  );
+}
