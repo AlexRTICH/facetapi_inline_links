@@ -10,7 +10,7 @@ Facet API Inline Links — sub-module (widget) for Facet API, which allows you t
 ## Install
 
 Setting standard: download, upload module's folder on your hosting.
-Next, go to facet's display settings (``./admin/config/search/search_api/index/[MY_SEARCH_INDEX]/facets``) and select «Show Widget». In open select-box choose «Inline links». Thats it!
+Next, go to facet's display settings (``./admin/config/search/search_api/index/[MY_SEARCH_INDEX]/facets``) and click «Show Widget». In open select-box choose «Inline links». Thats it!
 
 ## Required modules
 
