@@ -5,12 +5,12 @@ Drupal 7.x
 
 ## Description
 
-Facet API Inline Links — sub-module (widget) for Facet API, which allows you to organize the output facet elements (reference filter) in one line, that is, using a wrapper ``DIV > SPAN``, instead of ``UL > LI`` (both in standard widgets). Also, the counter facet has been imposed for the tag A.
+Facet API Inline Links — sub-module (widget) for Facet API, which allows you to organize the output facet elements (reference filter) in one line, that is, using a wrapper ``DIV > SPAN``, instead of ``UL > LI`` (both in standard widgets). Also, facet's counter has been imposed from tag ``A``.
 
 ## Install
 
 Setting standard: download, upload module's folder on your hosting.
-Next, go to the display settings facet (``./admin/config/search/search_api/index/[MY_SEARCH_INDEX]/facets``) and select the "Show Widget». In open select-box choose «Inline links». Thats it!
+Next, go to display settings facet (``./admin/config/search/search_api/index/[MY_SEARCH_INDEX]/facets``) and select «Show Widget». In open select-box choose «Inline links». Thats it!
 
 ## Required modules
 
